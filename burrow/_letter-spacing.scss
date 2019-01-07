@@ -1,0 +1,39 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+   LETTER SPACING
+   Docs: http://tachyons.io/docs/typography/tracking/
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+
+*/
+@mixin tracked       { letter-spacing:  $letter-spacing-1; }
+@mixin tracked-tight { letter-spacing: $letter-spacing-tight; }
+@mixin tracked-mega  { letter-spacing:  $letter-spacing-2; }
+
+@media #{$breakpoint-not-small} {
+  @mixin tracked-gts       { letter-spacing:  $letter-spacing-1; }
+  @mixin tracked-tight-gts { letter-spacing: $letter-spacing-tight; }
+  @mixin tracked-mega-gts  { letter-spacing:  $letter-spacing-2; }
+}
+
+@media #{$breakpoint-medium} {
+  @mixin tracked-m       { letter-spacing:  $letter-spacing-1; }
+  @mixin tracked-tight-m { letter-spacing: $letter-spacing-tight; }
+  @mixin tracked-mega-m  { letter-spacing:  $letter-spacing-2; }
+}
+
+@media #{$breakpoint-large} {
+  @mixin tracked-l       { letter-spacing:  $letter-spacing-1; }
+  @mixin tracked-tight-l { letter-spacing: $letter-spacing-tight; }
+  @mixin tracked-mega-l  { letter-spacing:  $letter-spacing-2; }
+}

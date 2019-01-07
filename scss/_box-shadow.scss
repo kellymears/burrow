@@ -1,0 +1,48 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+  BOX-SHADOW
+  Docs: http://tachyons.io/docs/themes/box-shadow/
+
+  Media Query Extensions:
+   -gts = not-small
+   -m  = medium
+   -l  = large
+
+ */
+
+@mixin shadow-1 { box-shadow: $box-shadow-1; }
+@mixin shadow-2 { box-shadow: $box-shadow-2; }
+@mixin shadow-3 { box-shadow: $box-shadow-3; }
+@mixin shadow-4 { box-shadow: $box-shadow-4; }
+@mixin shadow-5 { box-shadow: $box-shadow-5; }
+
+@media #{$breakpoint-not-small} {
+  @mixin shadow-1-gts { box-shadow: $box-shadow-1; }
+  @mixin shadow-2-gts { box-shadow: $box-shadow-2; }
+  @mixin shadow-3-gts { box-shadow: $box-shadow-3; }
+  @mixin shadow-4-gts { box-shadow: $box-shadow-4; }
+  @mixin shadow-5-gts { box-shadow: $box-shadow-5; }
+}
+
+@media #{$breakpoint-medium} {
+  @mixin shadow-1-m { box-shadow: $box-shadow-1; }
+  @mixin shadow-2-m { box-shadow: $box-shadow-2; }
+  @mixin shadow-3-m { box-shadow: $box-shadow-3; }
+  @mixin shadow-4-m { box-shadow: $box-shadow-4; }
+  @mixin shadow-5-m { box-shadow: $box-shadow-5; }
+}
+
+@media #{$breakpoint-large} {
+  @mixin shadow-1-l { box-shadow: $box-shadow-1; }
+  @mixin shadow-2-l { box-shadow: $box-shadow-2; }
+  @mixin shadow-3-l { box-shadow: $box-shadow-3; }
+  @mixin shadow-4-l { box-shadow: $box-shadow-4; }
+  @mixin shadow-5-l { box-shadow: $box-shadow-5; }
+}

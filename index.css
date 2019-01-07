@@ -1487,13 +1487,13 @@ code {
   border-radius: 0.4rem;
   font-size: 86%;
   margin: 0 0.2rem;
-  padding: 0.2rem 0.5rem;
-  white-space: nowrap;
+  padding: 0.2rem 0.2rem;
 }
 
 pre {
   background: #f4f5f6;
   border-left: 0.3rem solid #9b4dca;
+  padding-left: 0.3rem;
   overflow-y: hidden;
 }
 pre > code {
@@ -1750,33 +1750,6 @@ ul {
   list-style: circle inside;
 }
 
-.button,
-button,
-dd,
-dt,
-li {
-  margin-bottom: 1rem;
-}
-
-fieldset,
-input,
-select,
-textarea {
-  margin-bottom: 1.5rem;
-}
-
-blockquote,
-dl,
-figure,
-form,
-ol,
-p,
-pre,
-table,
-ul {
-  margin-bottom: 2.5rem;
-}
-
 table {
   border-spacing: 0;
   width: 100%;
@@ -1815,4 +1788,102 @@ img {
   float: right;
 }
 
-/*# sourceMappingURL=tachyons.css.map */
+body h1 {
+  font-size: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body h2 {
+  font-size: 2.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body h3 {
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body h4 {
+  font-size: 1.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body h5 {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body h6 {
+  font-size: 0.875rem;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 34em;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body > header,
+body > main,
+body > footer {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media screen and (min-width: 30em) {
+  body > header,
+body > main,
+body > footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  body > header,
+body > main,
+body > footer {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  body > header,
+body > main,
+body > footer {
+    width: 60%;
+  }
+}
+body > header {
+  padding-top: 0.5rem;
+}
+body > header > h1,
+body > header > h2,
+body > header > h3,
+body > header > h4,
+body > header > h5,
+body > header > h6 {
+  font-size: 6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body > header > h1 > span,
+body > header > h2 > span,
+body > header > h3 > span,
+body > header > h4 > span,
+body > header > h5 > span,
+body > header > h6 > span {
+  font-size: 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+body > header > h1 > span {
+  display: block;
+  font-size: 2.25rem;
+}
+body article {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+body article header {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+/*# sourceMappingURL=index.css.map */

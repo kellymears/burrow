@@ -1,0 +1,82 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+    OVERFLOW
+
+    Media Query Extensions:
+      -gts = not-small
+      -m  = medium
+      -l  = large
+
+ */
+
+@mixin overflow-visible { overflow: visible; }
+@mixin overflow-hidden { overflow: hidden; }
+@mixin overflow-scroll { overflow: scroll; }
+@mixin overflow-auto { overflow: auto; }
+
+@mixin overflow-x-visible { overflow-x: visible; }
+@mixin overflow-x-hidden { overflow-x: hidden; }
+@mixin overflow-x-scroll { overflow-x: scroll; }
+@mixin overflow-x-auto { overflow-x: auto; }
+
+@mixin overflow-y-visible { overflow-y: visible; }
+@mixin overflow-y-hidden { overflow-y: hidden; }
+@mixin overflow-y-scroll { overflow-y: scroll; }
+@mixin overflow-y-auto { overflow-y: auto; }
+
+@media #{$breakpoint-not-small} {
+  @mixin overflow-visible-gts { overflow: visible; }
+  @mixin overflow-hidden-gts {  overflow: hidden; }
+  @mixin overflow-scroll-gts { overflow: scroll; }
+  @mixin overflow-auto-gts { overflow: auto; }
+  @mixin overflow-x-visible-gts { overflow-x: visible; }
+  @mixin overflow-x-hidden-gts { overflow-x: hidden; }
+  @mixin overflow-x-scroll-gts { overflow-x: scroll; }
+  @mixin overflow-x-auto-gts { overflow-x: auto; }
+
+  @mixin overflow-y-visible-gts { overflow-y: visible; }
+  @mixin overflow-y-hidden-gts { overflow-y: hidden; }
+  @mixin overflow-y-scroll-gts { overflow-y: scroll; }
+  @mixin overflow-y-auto-gts { overflow-y: auto; }
+}
+
+@media #{$breakpoint-medium} {
+  @mixin overflow-visible-m { overflow: visible; }
+  @mixin overflow-hidden-m { overflow: hidden; }
+  @mixin overflow-scroll-m { overflow: scroll; }
+  @mixin overflow-auto-m { overflow: auto; }
+
+  @mixin overflow-x-visible-m { overflow-x: visible; }
+  @mixin overflow-x-hidden-m { overflow-x: hidden; }
+  @mixin overflow-x-scroll-m { overflow-x: scroll; }
+  @mixin overflow-x-auto-m { overflow-x: auto; }
+
+  @mixin overflow-y-visible-m { overflow-y: visible; }
+  @mixin overflow-y-hidden-m { overflow-y: hidden; }
+  @mixin overflow-y-scroll-m { overflow-y: scroll; }
+  @mixin overflow-y-auto-m { overflow-y: auto; }
+}
+
+@media #{$breakpoint-large} {
+  @mixin overflow-visible-l { overflow: visible; }
+  @mixin overflow-hidden-l { overflow: hidden; }
+  @mixin overflow-scroll-l { overflow: scroll; }
+  @mixin overflow-auto-l { overflow: auto; }
+
+  @mixin overflow-x-visible-l { overflow-x: visible; }
+  @mixin overflow-x-hidden-l { overflow-x: hidden; }
+  @mixin overflow-x-scroll-l { overflow-x: scroll; }
+  @mixin overflow-x-auto-l { overflow-x: auto; }
+
+  @mixin overflow-y-visible-l { overflow-y: visible; }
+  @mixin overflow-y-hidden-l { overflow-y: hidden; }
+  @mixin overflow-y-scroll-l { overflow-y: scroll; }
+  @mixin overflow-y-auto-l { overflow-y: auto; }
+}

@@ -1,0 +1,41 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+   BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+
+  @mixin cover { background-size: cover!important; }
+  @mixin contain { background-size: contain!important; }
+
+@media #{$breakpoint-not-small} {
+  @mixin cover-gts { background-size: cover!important; }
+  @mixin contain-gts { background-size: contain!important; }
+}
+
+@media #{$breakpoint-medium} {
+  @mixin cover-m { background-size: cover!important; }
+  @mixin contain-m { background-size: contain!important; }
+}
+
+@media #{$breakpoint-large} {
+  @mixin cover-l { background-size: cover!important; }
+  @mixin contain-l { background-size: contain!important; }
+}

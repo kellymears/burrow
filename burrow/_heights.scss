@@ -1,0 +1,131 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+
+   HEIGHTS
+   Docs: http://tachyons.io/docs/layout/heights/
+
+   Base:
+     h = height
+     min-h = min-height
+     min-vh = min-height vertical screen height
+     vh = vertical screen height
+
+   Modifiers
+     1 = 1st step in height scale
+     2 = 2nd step in height scale
+     3 = 3rd step in height scale
+     4 = 4th step in height scale
+     5 = 5th step in height scale
+
+     -25   = literal value 25%
+     -50   = literal value 50%
+     -75   = literal value 75%
+     -100  = literal value 100%
+
+     -auto = string value of auto
+     -inherit = string value of inherit
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+/* Height Scale */
+
+@mixin h1 { height: $height-1; }
+@mixin h2 { height: $height-2; }
+@mixin h3 { height: $height-3; }
+@mixin h4 { height: $height-4; }
+@mixin h5 { height: $height-5; }
+
+/* Height Percentages - Based off of height of parent */
+
+@mixin h-25 {  height:  25%; }
+@mixin h-50 {  height:  50%; }
+@mixin h-75 {  height:  75%; }
+@mixin h-100 { height: 100%; }
+
+@mixin min-h-100 { min-height: 100%; }
+
+/* Screen Height Percentage */
+
+@mixin vh-25 {  height:  25vh; }
+@mixin vh-50 {  height:  50vh; }
+@mixin vh-75 {  height:  75vh; }
+@mixin vh-100 { height: 100vh; }
+
+@mixin min-vh-100 { min-height: 100vh; }
+
+
+/* String Properties */
+
+@mixin h-auto {     height: auto; }
+@mixin h-inherit {  height: inherit; }
+
+@media #{$breakpoint-not-small} {
+  @mixin h1-gts {  height: $height-1; }
+  @mixin h2-gts {  height: $height-2; }
+  @mixin h3-gts {  height: $height-3; }
+  @mixin h4-gts {  height: $height-4; }
+  @mixin h5-gts {  height: $height-5; }
+  @mixin h-25-gts { height: 25%; }
+  @mixin h-50-gts { height: 50%; }
+  @mixin h-75-gts { height: 75%; }
+  @mixin h-100-gts { height: 100%; }
+  @mixin min-h-100-gts { min-height: 100%; }
+  @mixin vh-25-gts {  height:  25vh; }
+  @mixin vh-50-gts {  height:  50vh; }
+  @mixin vh-75-gts {  height:  75vh; }
+  @mixin vh-100-gts { height: 100vh; }
+  @mixin min-vh-100-gts { min-height: 100vh; }
+  @mixin h-auto-gts { height: auto; }
+  @mixin h-inherit-gts { height: inherit; }
+}
+
+@media #{$breakpoint-medium} {
+  @mixin h1-m { height: $height-1; }
+  @mixin h2-m { height: $height-2; }
+  @mixin h3-m { height: $height-3; }
+  @mixin h4-m { height: $height-4; }
+  @mixin h5-m { height: $height-5; }
+  @mixin h-25-m { height: 25%; }
+  @mixin h-50-m { height: 50%; }
+  @mixin h-75-m { height: 75%; }
+  @mixin h-100-m { height: 100%; }
+  @mixin min-h-100-m { min-height: 100%; }
+  @mixin vh-25-m {  height:  25vh; }
+  @mixin vh-50-m {  height:  50vh; }
+  @mixin vh-75-m {  height:  75vh; }
+  @mixin vh-100-m { height: 100vh; }
+  @mixin min-vh-100-m { min-height: 100vh; }
+  @mixin h-auto-m { height: auto; }
+  @mixin h-inherit-m { height: inherit; }
+}
+
+@media #{$breakpoint-large} {
+  @mixin h1-l { height: $height-1; }
+  @mixin h2-l { height: $height-2; }
+  @mixin h3-l { height: $height-3; }
+  @mixin h4-l { height: $height-4; }
+  @mixin h5-l { height: $height-5; }
+  @mixin h-25-l { height: 25%; }
+  @mixin h-50-l { height: 50%; }
+  @mixin h-75-l { height: 75%; }
+  @mixin h-100-l { height: 100%; }
+  @mixin min-h-100-l { min-height: 100%; }
+  @mixin vh-25-l {  height:  25vh; }
+  @mixin vh-50-l {  height:  50vh; }
+  @mixin vh-75-l {  height:  75vh; }
+  @mixin vh-100-l { height: 100vh; }
+  @mixin min-vh-100-l { min-height: 100vh; }
+  @mixin h-auto-l { height: auto; }
+  @mixin h-inherit-l { height: inherit; }
+}

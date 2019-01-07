@@ -1,0 +1,92 @@
+@import 'burrow/tachyons.scss';
+
+body {
+  h1 {
+    @include f1;
+    @include sans-serif;
+  }
+
+  h2 {
+    @include f2;
+    @include sans-serif;
+  }
+
+  h3 {
+    @include f3;
+    @include sans-serif;
+  }
+
+  h4 {
+    @include f4;
+    @include sans-serif;
+  }
+
+  h5 {
+    @include f5;
+    @include sans-serif;
+  }
+
+  h6 {
+    @include f6;
+    @include sans-serif;
+  }
+
+  p {
+    @include f4;
+    @include lh-copy;
+    @include measure-wide;
+    @include sans-serif;
+  }
+
+  > header,
+  > main,
+  > footer {
+    @include mt2;
+    @include ph0-gts;
+    @include ph2;
+    @include ml-auto;
+    @include mr-auto;
+    @include w-100;
+    @include w-50-l;
+    @include w-60-m;
+  }
+
+  > header {
+    @include pt2;
+
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      @include f-headline;
+      @include sans-serif;
+    }
+
+    > h1 > span,
+    > h2 > span,
+    > h3 > span,
+    > h4 > span,
+    > h5 > span,
+    > h6 > span {
+      @include f-subheadline;
+      @include sans-serif;
+    }
+
+    > h1 > span {
+      @include db;
+      @include f2;
+    }
+  }
+
+  article {
+    @include mv5;
+
+    header {
+      @include w-100;
+      @include mb2;
+      @include bb;
+    }
+  }
+}

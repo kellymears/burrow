@@ -133,7 +133,7 @@ $breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !defaul
 $breakpoint-large: 'screen and (min-width: 60em)' !default;
 
 /** VARIABLE */
-$color-primary: $red;
-$color-secondary: $light-red;
-$color-nested-links: $blue;
-$color-nested-links-hover: $light-blue
+$color-primary: $red !default;
+$color-secondary: $light-red !default;
+$color-nested-links: $blue !default;
+$color-nested-links-hover: $light-blue !default;
